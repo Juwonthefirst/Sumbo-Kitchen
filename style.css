@@ -37,8 +37,9 @@ nav > button{
 .message{
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 	color: #C8CCF9;
-	font-size: 24px;
+	font-size: 18px;
 	height: 100%;
 	width: 100%;
 	justify-content: center;
@@ -47,7 +48,13 @@ nav > button{
 }
 
 .intro{
+	width: 50%;
 	text-align: center;
-	border-bottom: 3px solid ghostwhite;
+	padding: 10px;
+	border-bottom: 2px solid ghostwhite;
 
+}
+
+.extra{
+	font-size: 12px;
 }

@@ -110,23 +110,25 @@ button:focus{
 	padding: 10px 10px;
 }
 
-.dish{
+.recommendations .dish{
 	border: 2px solid #FFCF8B;
 	min-width: 25%;
 	min-height: 10%;
 	border-radius: 10px;
 }
-.dish > img{
+.recommendations img{
 	width: 100%;
 	height: 60%;
 	border-radius: 10px 10px 0 0;
 }
 
-.dish > .food-info{
+.recommendations .food-info{
 	padding: 5px;
 	font-size: 14px;
 	font-weight: 400;
 }
+
+
 /*CSS for main menu in menu display*/
 .main-menu > h3{
 	text-align: center;
@@ -138,4 +140,23 @@ button:focus{
 	grid-auto-rows: 175px;
 	gap: 30px;
 	padding: 10px;
+}
+
+.main-menu img{
+	width: 100%;
+	height: 60%;
+	border-radius: 10px 10px 0 0;
+}
+
+.main-menu .food-info{
+	padding: 5px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.main-menu .dish{
+	border: 2px solid #FFCF8B;
+	min-width: 25%;
+	min-height: 10%;
+	border-radius: 10px;
 }

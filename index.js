@@ -1,3 +1,4 @@
 console.log('Connected')
-import {name} from './page_renderers/Menu.js'
+import {renderMenuPage} from './page_renderers/Menu.js'
 const contentDiv = document.querySelector('#content')
+const menuPage = renderMenuPage()

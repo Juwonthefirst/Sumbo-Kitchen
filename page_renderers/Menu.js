@@ -1,14 +1,5 @@
-export const name = 'Hello from Menu.js'
-console.log(name)
 
-export const renderMenuPage = function(foods) {
-	const menuDiv = document.createElement('div');
-	menuDiv.classList.add('menupage');
-	const recommendationDiv = document.createElement('div');
-	recommendationDiv.classList.add('recommendations');
-	const heading = document.createElement('div');
-	heading.innerText = 'Recommendations for you';
-	recommendationDiv.appendChild(heading)
+const displayFood = function (foods){
 	const displayDiv = document.createElement('div')
 	displayDiv.classList.add('display')
 	for (food of foods){
@@ -29,6 +20,28 @@ export const renderMenuPage = function(foods) {
 				foodInfoDiv.appendChild(foodPriceTag)
 			dishDiv.appendChild(foodInfoDiv)
 		displayDiv.appendChild(dishDiv)
-		
 	}
+	return displayDiv
+}
+	
+export const renderMenuPage = function(recommendedFoods, menu) {
+	const menuDiv = document.createElement('div');
+	menuDiv.classList.add('menupage');
+	const recommendationDiv = document.createElement('div');
+	recommendationDiv.classList.add('recommendations');
+	const recommendationsHeading = document.createElement('h3');
+	recommendationsHeading.innerText = 'Recommendations for you';
+	recommendationDiv.appendChild(recommendationsHeading);
+	recommendationDisplayDiv = displayFood(recommendedFoods);
+	recommendationDiv.appendChild(recommendationDisplayDiv);
+	const mainMenuDiv = document.createElement('div')
+	mainMenuDiv.className = 'main-menu'
+	const mainMenuHeading = document.createElement('h3');
+	mainMenuHeading.innerText = 'Menu'
+	mainMenuDiv.appendChild(mainMenuHeading)
+	mainMenuDisplay = renderMenuPage(menu)
+	mainMenuDiv.appendChild(mainMenuDiv)
+	menuDiv.appendChild(recommendationDiv)
+	menuDiv.appendChild(mainMenuDiv)
+	return menuDiv
 }

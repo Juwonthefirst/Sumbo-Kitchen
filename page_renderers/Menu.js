@@ -1,4 +1,3 @@
-
 const displayFood = function (foods){
 	const displayDiv = document.createElement('div')
 	displayDiv.classList.add('display')
@@ -23,24 +22,34 @@ const displayFood = function (foods){
 	}
 	return displayDiv
 }
-	
-export const renderMenuPage = function(recommendedFoods, menu) {
-	const menuDiv = document.createElement('div');
-	menuDiv.classList.add('menupage');
+
+const renderRecommendationDiv = function(recommendedFoods) {
 	const recommendationDiv = document.createElement('div');
 	recommendationDiv.classList.add('recommendations');
 	const recommendationsHeading = document.createElement('h3');
 	recommendationsHeading.innerText = 'Recommendations for you';
 	recommendationDiv.appendChild(recommendationsHeading);
-	recommendationDisplayDiv = displayFood(recommendedFoods);
+	const recommendationDisplayDiv = displayFood(recommendedFoods);
 	recommendationDiv.appendChild(recommendationDisplayDiv);
+	return recommendationDiv
+}
+
+const renderMainMenuDiv = function(menu) {
 	const mainMenuDiv = document.createElement('div')
 	mainMenuDiv.className = 'main-menu'
 	const mainMenuHeading = document.createElement('h3');
 	mainMenuHeading.innerText = 'Menu'
 	mainMenuDiv.appendChild(mainMenuHeading)
-	mainMenuDisplay = renderMenuPage(menu)
-	mainMenuDiv.appendChild(mainMenuDiv)
+	const mainMenuDisplay = renderMenuPage(menu)
+	mainMenuDiv.appendChild(mainMenuDisplay)
+	return mainMenuDiv
+}
+
+export const renderMenuPage = function(recommendedFoods, menu) {
+	const menuDiv = document.createElement('div');
+	menuDiv.classList.add('menupage');
+	const recommendationDiv = renderRecommendationDiv(recommendedFoods)
+	const mainMenuDiv = renderMainMenuDiv(menu)
 	menuDiv.appendChild(recommendationDiv)
 	menuDiv.appendChild(mainMenuDiv)
 	return menuDiv

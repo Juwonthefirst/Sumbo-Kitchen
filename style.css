@@ -19,8 +19,8 @@ nav{
 nav > button{
 	flex: 1;
 	border: 0;
-	background-color: black;
-	color: white;
+	background-color: #FFCF8B;
+	color: black;
 	/*margin: 0 5px;
 	border-bottom: 2px solid white;*/
 }
@@ -38,23 +38,23 @@ nav > button{
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	color: #C8CCF9;
+	color: #FFC16A;
 	font-size: 18px;
 	height: 100%;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(0, 0, 0, .6);
+	background-color: rgba(0, 0, 0, .7);
 }
 
 .intro{
 	width: 50%;
 	text-align: center;
 	padding: 10px;
-	border-bottom: 2px solid ghostwhite;
+	border-bottom: 2px solid antiquewhite;
 
 }
 
-.extra{
+.motto{
 	font-size: 12px;
 }

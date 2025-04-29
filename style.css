@@ -153,12 +153,15 @@ button:focus{
 
 .main-menu img{
 	width: 100%;
-	height: 60%;
+	height: 70%;
 	border-radius: 10px 10px 0 0;
 }
 
 .main-menu .food-info{
-	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 0 8px;
 	font-size: 18px;
 	font-weight: 600;
 }

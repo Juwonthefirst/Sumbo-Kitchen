@@ -92,16 +92,18 @@ button:focus{
 	position: absolute;
 	top: 5%;
 	height: 100vh;
-	color: white;
+	color: antiquewhite;
 	background: black;
-	padding: 10px;
+	padding: 20px 10px 10px;
 	overflow-y: auto;
 }
 /* CSS for the recommendations in Menu page*/
 .recommendations{
 	color: antiquewhite;
+	margin-bottom: 20px;
+
 }
-.display{
+.recommendations > .display{
 	display: flex;
 	overflow-x: auto;
 	gap: 20px;
@@ -110,7 +112,7 @@ button:focus{
 
 .dish{
 	border: 2px solid #FFCF8B;
-	min-width: 33%;
+	min-width: 25%;
 	min-height: 10%;
 	border-radius: 10px;
 }
@@ -126,9 +128,14 @@ button:focus{
 	font-weight: 400;
 }
 /*CSS for main menu in menu display*/
+.main-menu > h3{
+	text-align: center;
+	margin: 10px;
+}
 .main-menu > .display{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-auto-rows: 1fr;
+	grid-auto-rows: 175px;
 	gap: 30px;
+	padding: 10px;
 }

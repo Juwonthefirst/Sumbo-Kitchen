@@ -103,6 +103,10 @@ button:focus{
 	margin-bottom: 20px;
 
 }
+
+.recommendations > .h3{
+	margin: 15px;
+}
 .recommendations > .display{
 	display: flex;
 	overflow-x: auto;
@@ -155,8 +159,8 @@ button:focus{
 
 .main-menu .food-info{
 	padding: 5px;
-	font-size: 14px;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: 600;
 }
 
 .main-menu .dish{

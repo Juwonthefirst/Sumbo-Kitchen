@@ -1,5 +1,6 @@
-body{
+*{
 	margin: 0;
+	padding: 0;
 }
 
 header{
@@ -12,17 +13,20 @@ header{
 nav{
 	height: 100%;
 	display: flex;
+	/*background-color: black;
+	padding: 5px;*/
 }
 nav > button{
 	flex: 1;
 	border: 0;
 	background-color: black;
 	color: white;
+	/*margin: 0 5px;
+	border-bottom: 2px solid white;*/
 }
 
 .homepage{
 	height: 100vh;
-	display: flex;
 	background-image: url("./img/bg1.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -31,8 +35,19 @@ nav > button{
 }
 
 .message{
+	display: flex;
+	flex-direction: column;
+	color: #C8CCF9;
+	font-size: 24px;
 	height: 100%;
 	width: 100%;
-	text-align: center;
+	justify-content: center;
+	align-items: center;
 	background-color: rgba(0, 0, 0, .6);
+}
+
+.intro{
+	text-align: center;
+	border-bottom: 3px solid ghostwhite;
+
 }

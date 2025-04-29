@@ -66,7 +66,7 @@ button:focus{
 
 .extra{
 	position: absolute;
-	height: 40%;
+	height: 0%;
 	bottom: 0;
 	display: flex;
 	gap: 15px;
@@ -84,4 +84,51 @@ button:focus{
 	height: 50px;
 	border-radius: 50%;
 	background: white;
+}
+
+/*CSS for the Menu page*/
+
+#menupage{
+	position: absolute;
+	top: 5%;
+	height: 100vh;
+	color: white;
+	background: black;
+	padding: 10px;
+	overflow-y: auto;
+}
+/* CSS for the recommendations in Menu page*/
+.recommendations{
+	color: antiquewhite;
+}
+.display{
+	display: flex;
+	overflow-x: auto;
+	gap: 20px;
+	padding: 10px 10px;
+}
+
+.dish{
+	border: 2px solid #FFCF8B;
+	min-width: 33%;
+	min-height: 10%;
+	border-radius: 10px;
+}
+.dish > img{
+	width: 100%;
+	height: 60%;
+	border-radius: 10px 10px 0 0;
+}
+
+.dish > .food-info{
+	padding: 5px;
+	font-size: 14px;
+	font-weight: 400;
+}
+/*CSS for main menu in menu display*/
+.main-menu > .display{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 1fr;
+	gap: 30px;
 }

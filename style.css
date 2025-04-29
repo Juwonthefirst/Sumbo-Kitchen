@@ -52,6 +52,7 @@ button:focus{
 .intro{
 	width: 50%;
 	text-align: center;
+	line-height: 25px;
 	padding: 10px;
 	border-bottom: 2px solid antiquewhite;
 

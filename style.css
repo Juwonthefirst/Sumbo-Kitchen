@@ -16,14 +16,23 @@ nav{
 nav > button{
 	flex: 1;
 	border: 0;
-	
+	background-color: black;
+	color: white;
 }
 
 .homepage{
 	height: 100vh;
+	display: flex;
 	background-image: url("./img/bg1.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	
+}
+
+.message{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .6);
 }

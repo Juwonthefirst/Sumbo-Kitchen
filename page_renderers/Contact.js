@@ -18,7 +18,7 @@ export const renderContactPage = function() {
 			const locationHead = document.createElement('p')
 			locationHead.innerText = 'Or you can visit us at:'
 			const locationTag = document.createElement('p')
-			locationTag.innerHTML = ''
+			locationTag.innerHTML = '<ion-icon name="location-outline"></ion-icon>1234 Lipsum Ave CA, 92346'
 			detailDiv.append(emailHead, emailTag, phoneHead, phoneTag, locationHead, locationTag)
 		contactDiv.appendChild(detailDiv)
 	contentDiv.innerText = ''

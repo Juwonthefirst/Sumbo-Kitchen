@@ -1,11 +1,10 @@
-
 import {renderMenuPage} from './page_renderers/Menu.js'
 import {renderHomePage} from './page_renderers/homepage.js'
 //import {renderContactPage} from './page_renderers/Contact.js'
 
 const contentDiv = document.querySelector('#content')
 const homeBtn = document.querySelector('#home-btn')
-const menuBtns = document.querySelectorAll('.menu-btn')
+const menuBtn = document.querySelector('#menu-btn')
 const contactBtn = document.querySelector('#about-btn')
 
 const displayPage = function(pageRender) {
@@ -17,12 +16,12 @@ homeBtn.addEventListener('click', () => {
 	displayPage(renderHomePage)
 })
 
-menuBtns.forEach((button) => {
-	button.addEventListener('click', () => {
-		displayPage(renderMenuPage)
-	})
+menuBtn.addEventListener('click', () => {
+	displayPage(renderMenuPage)
 })
 
 contactBtn.addEventListener('click', () => {
 	displayPage(renderContactPage)
 })
+
+homeBtn.click()

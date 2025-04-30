@@ -3,6 +3,7 @@ import {renderMenuPage} from './Menu.js';
 const contentDiv = document.querySelector('#content')
 
 export const renderHomePage = function() {
+	const contentDiv = document.querySelector('#content')
 	const homeDiv = document.createElement('div')
 	homeDiv.className = 'homepage'
 		const messageDiv = document.createElement('div')
@@ -25,13 +26,12 @@ export const renderHomePage = function() {
 				orderBtn.innerText = 'Order now'
 				
 				orderBtn.addEventListener('click', () => {
-				    contentDiv.innerHTML = ''
-				    menuPage = renderMenuPage()
-	                contentDiv.appendChild(menuPage)
+				    renderMenuPage()
 				})
 				
 				mottoDiv.appendChild(orderBtn)
 			messageDiv.appendChild(mottoDiv)
 		homeDiv.appendChild(messageDiv)
-	return homeDiv
+		contentDiv.innerText = ''
+		contentDiv.appendChild(homeDiv)
 }

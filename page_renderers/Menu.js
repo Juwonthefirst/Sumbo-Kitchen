@@ -51,12 +51,14 @@ const renderMainMenuDiv = function(food) {
 }
 
 export const renderMenuPage = function() {
+	const contentDiv = document.querySelector('#content')
 	const menuDiv = document.createElement('div');
 	menuDiv.id = 'menupage'
 	const recommendationDiv = renderRecommendationDiv(recommendedFoods)
 	const mainMenuDiv = renderMainMenuDiv(menu)
 	menuDiv.appendChild(recommendationDiv)
 	menuDiv.appendChild(mainMenuDiv)
-	return menuDiv
+	contentDiv.innerText = ''
+	contentDiv.appendChild(menuDiv)
 }
 

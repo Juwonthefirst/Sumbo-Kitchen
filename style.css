@@ -206,3 +206,28 @@ button:focus{
 	min-height: 10%;
 	border-radius: 10px;
 }
+
+
+/* CSS about Contact page*/
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: antiquewhite;
+	background: black;
+	height: 100vh;
+}
+
+.contact > .personal-details{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border: 2px solid #FFCF8B;
+	border-radius: 20px;
+	height: 70%;
+	padding: 10px;
+}
+
+.head{
+	align-self: center;
+}

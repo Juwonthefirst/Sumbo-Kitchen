@@ -61,4 +61,3 @@ export const renderMenuPage = function() {
 	contentDiv.innerText = ''
 	contentDiv.appendChild(menuDiv)
 }
-

@@ -90,13 +90,13 @@ button:focus{
 
 #menupage{
 	position: absolute;
-	top: 5%;
+	top: 3%;
 	height: 100vh;
 	color: antiquewhite;
 	background: black;
 	padding: 20px 10px 10px;
 	overflow-y: auto;
-	
+	overflow-x: hidden;
 }
 
 /* CSS for the recommendations in Menu page*/
@@ -139,13 +139,13 @@ button:focus{
 
 .main-menu > h3{
 	position: sticky;
-	top: -3%;
+	top: -1%;
 	font-size: 24px;
 	text-align: center;
 	background: rgba(0, 0, 0, .7);
 	padding: 7px;
 }
-.main-menu > .display{
+.main-menu .display{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: 175px;

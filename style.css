@@ -211,23 +211,38 @@ button:focus{
 /* CSS about Contact page*/
 .contact{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	color: antiquewhite;
 	background: black;
 	height: 100vh;
+	padding: 30px;
 }
 
 .contact > .personal-details{
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	align-self: center;
+	gap: 10px;
 	border: 2px solid #FFCF8B;
 	border-radius: 20px;
-	height: 70%;
-	padding: 10px;
+	height: auto;
+	padding: 20px 10px 10px;
 }
 
 .head{
-	align-self: center;
+	font-size: 20px;
+}
+
+ion-icon{
+	margin: 0 7px -2px;
+}
+
+.socials{
+	display: inline-flex;
+	max-width: 10%;
+}
+
+.socials > *{
+	height: 100px;
 }

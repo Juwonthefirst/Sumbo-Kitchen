@@ -13,4 +13,4 @@ menuBtn.addEventListener('click', renderMenuPage)
 
 contactBtn.addEventListener('click', renderContactPage)
 
-//homeBtn.click()
+homeBtn.click()

@@ -1,7 +1,7 @@
 const displayFood = function (foods){
 	const displayDiv = document.createElement('div')
 	displayDiv.classList.add('display')
-	for (food of foods){
+	for (let food of foods){
 		const dishDiv = document.createElement('div')
 		dishDiv.classList.add('dish')
 			const dishImg = document.createElement('img')
@@ -40,14 +40,14 @@ const renderMainMenuDiv = function(menu) {
 	const mainMenuHeading = document.createElement('h3');
 	mainMenuHeading.innerText = 'Menu'
 	mainMenuDiv.appendChild(mainMenuHeading)
-	const mainMenuDisplay = renderMenuPage(menu)
+	const mainMenuDisplay = displayFood(menu)
 	mainMenuDiv.appendChild(mainMenuDisplay)
 	return mainMenuDiv
 }
 
 export const renderMenuPage = function(recommendedFoods, menu) {
 	const menuDiv = document.createElement('div');
-	menuDiv.classList.add('menupage');
+	menuDiv.setAttribute('id', 'menupage')
 	const recommendationDiv = renderRecommendationDiv(recommendedFoods)
 	const mainMenuDiv = renderMainMenuDiv(menu)
 	menuDiv.appendChild(recommendationDiv)

@@ -39,9 +39,12 @@ const renderRecommendationDiv = function(food) {
 const renderMainMenuDiv = function(food) {
 	const mainMenuDiv = document.createElement('div')
 	mainMenuDiv.className = 'main-menu'
+	const mainMenuHeadingDiv = document.createElement('div')
+	mainMenuHeadingDiv.className = 'heading'
 	const mainMenuHeading = document.createElement('h3');
 	mainMenuHeading.innerText = 'Menu'
-	mainMenuDiv.appendChild(mainMenuHeading)
+	mainMenuHeadingDiv.appendChild(mainMenuHeading)
+	mainMenuDiv.appendChild(mainMenuHeadingDiv)
 	const mainMenuDisplay = displayFood(food)
 	mainMenuDiv.appendChild(mainMenuDisplay)
 	return mainMenuDiv

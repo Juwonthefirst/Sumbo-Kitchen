@@ -17,6 +17,9 @@ export const renderHomePage = function() {
 				const mottoTag = document.createElement('p')
 				mottoTag.innerText = 'Where Food is more than a need, it is a lifestyle'
 				mottoDiv.appendChild(mottoTag)
+				const orderBtn = document.createElement('button')
+				orderBtn.innerText = 'Order now'
+				mottoDiv.appendChild(orderBtn)
 			messageDiv.appendChild(mottoDiv)
 		homeDiv.appendChild(messageDiv)
 	return homeDiv

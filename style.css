@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Montserrat';
 }
 
 header{
@@ -15,6 +16,7 @@ header{
 nav{
 	height: 100%;
 	display: flex;
+	font-family: 'Montserrat';
 }
 
 nav > button{
@@ -47,44 +49,40 @@ button:focus{
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .65);
 }
 
 .intro{
-	width: 50%;
+	width: 70%;
 	text-align: center;
-	line-height: 25px;
+	line-height: 28px;
 	padding: 10px;
 	border-bottom: 2px solid antiquewhite;
+}
 
+.intro > h3{
+	font-size: 42px;
+	font-family: 'Cormorant Garamond';
+	font-weight: 600;
+	font-style: italic;
 }
 
 .motto{
 	font-size: 12px;
-}
-
-.extra{
-	position: absolute;
-	height: 0%;
-	bottom: 0;
-	display: flex;
-	gap: 15px;
-	padding: 15px;
-	font-size: 12px;
-}
-.info{
-	flex: 1;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
-}
-.info > .img{
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background: white;
+	gap: 20px;
 }
 
+.motto > button{
+	align-self: center;
+	text-align: center;
+	height: 30px;
+	width: 40%;
+	border: none;
+	border-radius: 5px;
+	background: #FFC16A;
+}
 /*CSS for the Menu page*/
 
 #menupage{
@@ -99,11 +97,25 @@ button:focus{
 	overflow-x: hidden;
 }
 
+#menupage *{
+	font-family: 'Lora';
+	font-style: italic;
+}
+
+#menupage h3{
+	font-style: normal;
+	border-bottom: 5px;
+}
+
 /* CSS for the recommendations in Menu page*/
 .recommendations{
 	color: antiquewhite;
 	padding: 10px;
 	margin-bottom: 15px;
+}
+
+.recommendations h3{
+	font-weight: 700;
 }
 
 .recommendations > .display{
@@ -129,9 +141,10 @@ button:focus{
 	display: flex;
 	flex-direction: column;
 	gap: 3px;
-	padding: 5px;
-	font-size: 14px;
+	padding: 0 5px 5px;
+	font-size: 15px;
 	font-weight: 400;
+	font-style: italic;
 }
 
 
@@ -141,14 +154,26 @@ button:focus{
 	padding: 10px;
 }
 
-.main-menu > h3{
+.main-menu .heading{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: sticky;
-	top: -1%;
-	font-size: 24px;
+	top: -10px;
+	font-size: 25px;
 	text-align: center;
 	background: rgba(0, 0, 0, .7);
 	padding: 7px;
 }
+
+.main-menu .heading:before,
+.main-menu .heading:after{
+	content: "";
+	flex: 1;
+	border-bottom: 1px solid #FFC16A;
+	margin: 0 10px;
+}
+
 .main-menu .display{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -159,19 +184,22 @@ button:focus{
 
 .main-menu img{
 	width: 100%;
-	height: 70%;
+	height: 67%;
 	border-radius: 10px 10px 0 0;
 }
 
 .main-menu .food-info{
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
-	padding: 0 8px;
-	font-size: 18px;
+	gap: 3px;
+	padding: 0 10px;
+	font-size: 16px;
+	font-weight: 400;
+}
+.main-menu .food-name{
+	font-size: 20px;
 	font-weight: 600;
 }
-
 .main-menu .dish{
 	border: 2px solid #FFCF8B;
 	min-width: 25%;

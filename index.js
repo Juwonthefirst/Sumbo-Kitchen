@@ -1,7 +1,7 @@
-import {recommendedFoods, menu} from './foodStore.js'
+
 import {renderMenuPage} from './page_renderers/Menu.js'
 import {renderHomePage} from './page_renderers/homepage.js'
-import {renderContactPage} from './page_renderers/Contact.js'
+//import {renderContactPage} from './page_renderers/Contact.js'
 
 const contentDiv = document.querySelector('#content')
 const homeBtn = document.querySelector('#home-btn')
@@ -10,19 +10,19 @@ const contactBtn = document.querySelector('#about-btn')
 
 const displayPage = function(pageRender) {
 	contentDiv.innerHTML = ''
-	contentDiv.appendChild(pageRender)
+	contentDiv.appendChild(pageRender())
 }
 
 homeBtn.addEventListener('click', () => {
-	displayPage(renderHomePage())
+	displayPage(renderHomePage)
 })
 
 menuBtns.forEach((button) => {
 	button.addEventListener('click', () => {
-		displayPage(renderMenuPage(recommendedFoods, menu))
+		displayPage(renderMenuPage)
 	})
 })
 
 contactBtn.addEventListener('click', () => {
-	displayPage(renderContactPage())
+	displayPage(renderContactPage)
 })

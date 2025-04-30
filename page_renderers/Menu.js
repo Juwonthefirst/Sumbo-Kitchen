@@ -1,3 +1,5 @@
+import {recommendedFoods, menu} from '../foodStore.js'
+
 const displayFood = function (foods){
 	const displayDiv = document.createElement('div')
 	displayDiv.className = 'display'
@@ -23,24 +25,24 @@ const displayFood = function (foods){
 	return displayDiv
 }
 
-const renderRecommendationDiv = function(recommendedFoods) {
+const renderRecommendationDiv = function(food) {
 	const recommendationDiv = document.createElement('div');
 	recommendationDiv.className = 'recommendations';
 	const recommendationsHeading = document.createElement('h3');
 	recommendationsHeading.innerText = 'Recommendations for you';
 	recommendationDiv.appendChild(recommendationsHeading);
-	const recommendationDisplayDiv = displayFood(recommendedFoods);
+	const recommendationDisplayDiv = displayFood(food);
 	recommendationDiv.appendChild(recommendationDisplayDiv);
 	return recommendationDiv
 }
 
-const renderMainMenuDiv = function(menu) {
+const renderMainMenuDiv = function(food) {
 	const mainMenuDiv = document.createElement('div')
 	mainMenuDiv.className = 'main-menu'
 	const mainMenuHeading = document.createElement('h3');
 	mainMenuHeading.innerText = 'Menu'
 	mainMenuDiv.appendChild(mainMenuHeading)
-	const mainMenuDisplay = displayFood(menu)
+	const mainMenuDisplay = displayFood(food)
 	mainMenuDiv.appendChild(mainMenuDisplay)
 	return mainMenuDiv
 }

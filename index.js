@@ -1,4 +1,3 @@
-console.log('Connected')
 import {renderMenuPage} from './page_renderers/Menu.js'
 import {recommendedFoods, menu} from './foodStore.js'
 

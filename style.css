@@ -96,7 +96,9 @@ button:focus{
 	background: black;
 	padding: 20px 10px 10px;
 	overflow-y: auto;
+	
 }
+
 /* CSS for the recommendations in Menu page*/
 .recommendations{
 	color: antiquewhite;
@@ -104,7 +106,7 @@ button:focus{
 
 }
 
-.recommendations > .h3{
+.recommendations > h3{
 	margin: 15px;
 }
 .recommendations > .display{

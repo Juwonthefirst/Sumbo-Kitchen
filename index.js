@@ -1,6 +1,6 @@
 import {renderMenuPage} from './page_renderers/Menu.js'
 import {renderHomePage} from './page_renderers/homepage.js'
-//import {renderContactPage} from './page_renderers/Contact.js'
+import {renderContactPage} from './page_renderers/Contact.js'
 
 
 const homeBtn = document.querySelector('#home-btn')

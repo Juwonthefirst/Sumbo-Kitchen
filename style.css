@@ -227,6 +227,7 @@ button:focus{
 	border: 2px solid #FFCF8B;
 	border-radius: 20px;
 	height: auto;
+	width: 90%;
 	padding: 20px 10px 10px;
 }
 

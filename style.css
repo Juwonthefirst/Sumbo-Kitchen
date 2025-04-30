@@ -9,20 +9,19 @@ header{
 	z-index: 1;
 	width: 100%;
 	height: 5%;
+	max-height: 70px;
 }
+
 nav{
 	height: 100%;
 	display: flex;
-	/*background-color: black;
-	padding: 5px;*/
 }
+
 nav > button{
 	flex: 1;
 	border: 0;
 	background-color: #FFCF8B;
 	color: black;
-	/*margin: 0 5px;
-	border-bottom: 2px solid white;*/
 }
 
 button:focus{
@@ -92,9 +91,10 @@ button:focus{
 	position: absolute;
 	top: 3%;
 	height: 100vh;
+	width: 100%;
 	color: antiquewhite;
 	background: black;
-	padding: 20px 10px 10px;
+	padding: 20px 0 10px;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
@@ -102,13 +102,10 @@ button:focus{
 /* CSS for the recommendations in Menu page*/
 .recommendations{
 	color: antiquewhite;
-	margin-bottom: 20px;
-
+	padding: 10px;
+	margin-bottom: 15px;
 }
 
-.recommendations > h3{
-	margin: 15px;
-}
 .recommendations > .display{
 	display: flex;
 	overflow-x: auto;
@@ -119,7 +116,7 @@ button:focus{
 .recommendations .dish{
 	border: 2px solid #FFCF8B;
 	min-width: 25%;
-	min-height: 10%;
+	height: 18vh;
 	border-radius: 10px;
 }
 .recommendations img{
@@ -129,6 +126,9 @@ button:focus{
 }
 
 .recommendations .food-info{
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
 	padding: 5px;
 	font-size: 14px;
 	font-weight: 400;
@@ -136,6 +136,10 @@ button:focus{
 
 
 /*CSS for main menu in menu display*/
+
+.main-menu{
+	padding: 10px;
+}
 
 .main-menu > h3{
 	position: sticky;
@@ -150,7 +154,7 @@ button:focus{
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: 175px;
 	gap: 30px;
-	padding: 10px;
+	padding: 10px 10px 60px;
 }
 
 .main-menu img{

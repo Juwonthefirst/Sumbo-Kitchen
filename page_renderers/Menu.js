@@ -45,7 +45,7 @@ const renderMainMenuDiv = function(menu) {
 	return mainMenuDiv
 }
 
-export const renderMenuPage = function(recommendedFoods, menu) {
+export const renderMenuPage = function() {
 	const menuDiv = document.createElement('div');
 	menuDiv.id = 'menupage'
 	const recommendationDiv = renderRecommendationDiv(recommendedFoods)
@@ -54,3 +54,4 @@ export const renderMenuPage = function(recommendedFoods, menu) {
 	menuDiv.appendChild(mainMenuDiv)
 	return menuDiv
 }
+
